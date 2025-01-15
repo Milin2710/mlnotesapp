@@ -285,3 +285,9 @@
 .inlinelink:hover{
   text-decoration: underline;
 }
+.suggestion{
+  font-size: 14px !important;
+}
+.suggestion a{
+  color: rgb(69, 69, 255) !important;
+}

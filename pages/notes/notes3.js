@@ -42,10 +42,19 @@ export default function Notesc() {
           <br />
           gradient_w is the gradient of mean squared error wrt weight w
           <br />
-          ∂/∂w ∑(w.xi - yi)^2 /n  --  for one weight with no bias
+          ∂/∂w ∑(w.xi - yi)^2 /n -- for one weight with no bias
+          <br />
+          <span className={styles.suggestion}>
+            Read&nbsp;
+            <Link className={styles.inlinelink} href="../blogs/blog4">
+              backpropogation
+            </Link>
+            &nbsp;blog for more details.
+          </span>
           <pre>gradient_w = 2 * np.mean(error * X)</pre>
           Here coefficient of X is w
-          <br /><br />
+          <br />
+          <br />
           <b>Complete code</b>
           <br />
           <code className={styles.notes3codeheapify}>

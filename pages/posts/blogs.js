@@ -3,14 +3,18 @@ import styles from "../../styles/Home.module.css";
 
 const blogData = [
   {
-    id: 1,
+    href: "../blogs/blog4",
+    title: "Backpropagation",
+    description: "",
+    tags: ["ML", "backpropagation", "gradient descent"],
+  },
+  {
     href: "../blogs/blog3",
     title: "ReLU - Activation function in PyTorch",
     description: "",
     tags: ["ML", "pytorch"],
   },
   {
-    id: 2,
     href: "../blogs/blog1",
     title: "Intro to Data Science",
     description: "Get a brief intro to Data Science ML AI",
@@ -24,9 +28,9 @@ export default function Blogsc() {
       <br />
       <h1 className={styles.blogsecheading}>BLOGS</h1>
       <br />
-      {blogData.map((blogs) => (
-        <section key={blogs.id} className={styles[`part${blogs.id}`]}>
-          <span className={styles.problemsno}>{blogs.id}. </span>
+      {blogData.map((blogs, index) => (
+        <section key={index + 1} className={styles[`part${index + 1}`]}>
+          <span className={styles.problemsno}>{index + 1}. </span>
           <Link href={blogs.href} className={styles.blogpagehead}>
             {blogs.title}
           </Link>
